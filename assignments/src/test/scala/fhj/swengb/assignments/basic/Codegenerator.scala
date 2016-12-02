@@ -38,6 +38,9 @@ object Codegenerator {
        |          "have a repository named http://github.com/${s.githubUserName}/android-BasicGestureDetect" in assert(Github.exists(${s.id},"android-BasicGestureDetect"), "Github repository 'android-BasicGestureDetect' for ${s.fullName}does not exist!")
        |          "have not committed local.properties" in assert(!Github.exists(${s.id}.fileIn("android-BasicGestureDetect", "local.properties")))
        |          "have a .gitignore file commited" in assert(Github.exists(${s.id}.fileIn("android-BasicGestureDetect", ".gitignore")))
+       |           "have a GestureListener.scala commited" in assert(Github.exists(${s.id}.fileIn("android-BasicGestureDetect", "Application/src/main/scala/com/example/android/basicgesturedetect/GestureListener.scala")))
+        |          "have a MainActivity.scala commited" in assert(Github.exists(${s.id}.fileIn("android-BasicGestureDetect", "Application/src/main/scala/com/example/android/basicgesturedetect/MainActivity.scala")))
+        |          "have a .gitignore file commited" in assert(Github.exists(${s.id}.fileIn("android-BasicGestureDetect", ".gitignore")))
        |       |       }
        |     }
       """.stripMargin
@@ -46,7 +49,7 @@ object Codegenerator {
 
   def main(args: Array[String]): Unit = {
 
-    val parent = new File("/Users/lad/Documents/fhj/course/assignments/src/test/scala/fhj/swengb/assignments/basic")
+    val parent = new File("C:\\workspace\\fhj.swengb2016.course\\assignments\\src\\test\\scala\\fhj\\swengb\\assignments\\basic")
     // mk group spec
     for (g <- Ima2015.AllGroups) yield {
       val body = g.members.map(mkTestCode).mkString("\n")
