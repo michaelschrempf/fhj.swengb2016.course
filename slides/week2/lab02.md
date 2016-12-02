@@ -25,7 +25,7 @@ Now, you are ready and set to use maven as your build system.
 ## 3 - Clone it to your local computer (in your workspace)
 
 - cd <code>c:/workspace</code>
-- git clone https://github.com/<yourgitubusername>/fhj.swengb2016.course
+- git clone https://github.com/yourgitubusername/fhj.swengb2016.course
 
 ## 4 - Build project locally
 
@@ -90,5 +90,11 @@ You should see something like this:
 The challenge for your second homework is to implement a sierpinski triangle (depth = 7). Of course, the triangle
 should be constructed, that is to say your app should construct the sierpinski triangle programmatically.
 
-Your code should be pushed to your 
+The repository should be named 'sierpinski-android'
+
+The implementation language is Scala.
+
+
+
+
  
