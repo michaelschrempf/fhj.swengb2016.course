@@ -21,3 +21,4 @@ project/plugins/project/
 # intellij
 .idea/
 *.iml
+/Test Results - Gruppe_CSpec.html
